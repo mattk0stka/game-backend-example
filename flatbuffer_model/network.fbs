@@ -12,3 +12,9 @@ table Request {
 union NetworkUnion {
   Request
 }
+
+table Envelope {
+  msg: NetworkUnion;
+}
+
+root_type Envelope;
