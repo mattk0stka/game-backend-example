@@ -1,0 +1,14 @@
+include "monster.fbs";
+
+namespace mygame.network;
+
+enum Package:byte {Init = 0, Pending = 1, CloseConnection = 2, Message = 3}
+
+table Request {
+  status:Package = Init;
+}
+
+
+union NetworkUnion {
+  Request
+}

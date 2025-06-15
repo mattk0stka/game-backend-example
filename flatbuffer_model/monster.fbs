@@ -1,0 +1,18 @@
+namespace mygame.sample;
+
+enum Color:byte {Red = 0, Green, Blue = 2}
+
+struct Vec3 {
+ x:float;
+ y:float;
+ z:float;
+}
+
+table Monster {
+  pos:Vec3;
+  name:string;
+  color:Color = Blue;
+
+}
+
+root_type Monster;
