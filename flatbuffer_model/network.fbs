@@ -14,7 +14,7 @@ union NetworkUnion {
 }
 
 table Envelope {
-  msg: NetworkUnion;
+  msg:NetworkUnion;
 }
 
 root_type Envelope;
